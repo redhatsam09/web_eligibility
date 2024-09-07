@@ -1,0 +1,33 @@
+:root {
+  --size-space-200: 8px;
+  --size-space-300: 12px;
+  --typography-primitives-scale-06: 32px;
+  --color-background-brand-default: var(--color-primitives-brand-800);
+  --color-border-brand-default: var(--color-primitives-brand-800);
+  --color-background-brand-hover: var(--color-primitives-brand-900);
+  --color-primitives-brand-800: rgba(44, 44, 44, 1);
+  --color-primitives-brand-100: rgba(245, 245, 245, 1);
+  --color-primitives-brand-900: rgba(30, 30, 30, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-color-mode="SDS-light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-color-mode="SDS-light"] {
+  --color-background-brand-default: var(--color-primitives-brand-800);
+  --color-border-brand-default: var(--color-primitives-brand-800);
+}
+
+[data-color-mode="SDS-dark"] {
+  --color-background-brand-default: var(--color-primitives-brand-100);
+  --color-border-brand-default: var(--color-primitives-brand-100);
+}
